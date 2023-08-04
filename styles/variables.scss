@@ -1,0 +1,22 @@
+//Colors
+$primary: #f3eded;
+$backgroundColor: #7e7c7c;
+$secondary: rgb(35, 122, 26);
+
+//Fonts
+$fontType: Arial, Helvetica, sans-serif;
+
+//Breakpoints
+
+$sm: 640px;
+$md: 641px;
+$lg: 769px;
+$xl: 1025px;
+
+@mixin buttonStyles($bgColor, $fontColor, $fontSize) {
+  background-color: $bgColor;
+  border: none;
+  border-radius: 8px;
+  color: $fontColor;
+  font-size: $fontSize;
+}

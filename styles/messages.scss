@@ -1,0 +1,63 @@
+// @import "./variables.scss";
+
+// .page-container {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 1rem 0.5rem 1rem;
+//   height: 100%;
+// }
+
+// .navbar {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   height: 50px;
+// }
+
+// .links-container {
+//   display: flex;
+//   gap: 1rem;
+// }
+
+// .messages-container {
+//   display: flex;
+//   flex-direction: column-reverse;
+//   border: 1px solid $primary;
+//   border-radius: 5px;
+//   font-size: 12px;
+//   overflow-y: auto;
+// }
+
+// .messages-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+// }
+
+// .form-container {
+//   display: flex;
+//   gap: 1rem;
+//   justify-content: space-between;
+//   width: 100%;
+//   height: 30px;
+// }
+
+// .message-input {
+//   width: 80%;
+//   border: 1px solid $primary;
+//   border-radius: 5px;
+//   font-size: 1rem;
+// }
+
+// .message-content {
+//   display: flex;
+//   margin: 0.3rem;
+//   gap: 1rem;
+//   font-family: $fontType;
+// }
+
+// .send {
+//   width: 15%;
+//   height: 100%;
+//   @include buttonStyles($secondary, $backgroundColor, 16px);
+// }
