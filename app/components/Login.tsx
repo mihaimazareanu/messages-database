@@ -2,7 +2,6 @@
 
 import { FormEvent, useRef, useState } from "react";
 import { BiShowAlt, BiHide } from "react-icons/bi";
-import "../../styles/login.scss";
 
 type LoginInputRefs = {
   username: HTMLInputElement | null;
@@ -15,7 +14,7 @@ const LoginComponent = () => {
     password: null,
   });
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState<string>("");
+  const [error, setError] = useState<string | null>("");
 
   const loginUser = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -43,6 +42,7 @@ const LoginComponent = () => {
       if (response.ok) {
         const token = data.token;
         localStorage.setItem("jwtToken:", token);
+        setError(null);
       } else {
         setError(data.message);
       }
@@ -96,7 +96,11 @@ const LoginComponent = () => {
             />
           )}
         </fieldset>
-        {error && <p className="login-error">{error}</p>}
+        {error && (
+          <p className="text-xs text-red-500 bg-primary border-none rounded p-2 mt-4 mb-4 self-center">
+            {error}
+          </p>
+        )}
         <button
           type="submit"
           className="flex w-28 bg-secondary border-none rounded-full text-primary justify-center items-center p-1 mr-4 mt-4 self-center"

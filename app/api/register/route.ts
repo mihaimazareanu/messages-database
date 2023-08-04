@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import connectToDatabase from "@/dbConnect";
-import { checkUsername, createToken /*verifyToken*/ } from "@/middleware/utils";
+import { checkUsername, createToken } from "@/utils/utils";
 import { User } from "../_db/models/User";
 
 const addUser = async (username: string, password: string) => {

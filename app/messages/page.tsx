@@ -1,5 +1,4 @@
 "use client";
-//import "../../styles/messages.scss";
 import Link from "next/link";
 import { useState, useRef, useEffect, FormEvent } from "react";
 import Message from "../components/Message";
